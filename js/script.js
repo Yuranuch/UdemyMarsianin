@@ -25,7 +25,6 @@ const movieDB = {
 };
 movieDB.movies.sort();
 
-
 let removeADV = () => {
     let advertising = document.querySelectorAll('.promo__adv img');
     advertising.forEach(function(i){
@@ -52,7 +51,6 @@ let changeList = () => {
     listElements.forEach(function (i, index) {
          i.innerHTML = `${index + 1} - ${movieDB.movies[index]}`;
     });
-
 }
 changeList();
 
